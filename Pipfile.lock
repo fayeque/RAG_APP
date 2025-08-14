@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0f0d4645f879e961eec42b1ae919d407fb5ce672bddb956adb22572fc02fa7d5"
+            "sha256": "0dcaf20668e3ce832163159f488462834aefde3fe15d19afa0887c8e0085c103"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -507,6 +507,15 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==2025.7.0"
+        },
+        "git-filter-repo": {
+            "hashes": [
+                "sha256:2cd04929b9024e83e65db571cbe36aec65ead0cb5f9ec5abe42158654af5ad83",
+                "sha256:411b27e68a080c07a69c233cb526dbc2d848b09a72f10477f4444dd0822cf290"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.6'",
+            "version": "==2.47.0"
         },
         "greenlet": {
             "hashes": [
