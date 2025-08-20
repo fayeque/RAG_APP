@@ -122,7 +122,7 @@ def main():
     # Close the connection
     connection.close()
 
-    print("Finish")
+    print("Finish ")
 
 
 if __name__ == "__main__":
