@@ -1,5 +1,2 @@
 # Ignore environment file
 .env
-
-# Ignore local model folder
-local_model/

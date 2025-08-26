@@ -1,0 +1,13 @@
+langchain
+python-dotenv
+langchain-openai
+langchain-community
+pypdf
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+oracledb
+git-filter-repo
+oci
+fastapi
+uvicorn
