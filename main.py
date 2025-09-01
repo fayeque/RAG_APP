@@ -58,7 +58,7 @@ def ask_question(request: QueryRequest):
 
     return {
         #"question": request.question,
-        "contexts": [doc.page_content for doc in docs],
+        #"contexts": [doc.page_content for doc in docs],
         "answer": response
     }
 
