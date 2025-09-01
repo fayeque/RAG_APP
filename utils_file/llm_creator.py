@@ -17,6 +17,7 @@ def create_llm() -> ChatOCIGenAI:
         },
         auth_type="API_KEY",   # or SECURITY_TOKEN, INSTANCE_PRINCIPAL, etc.
         auth_profile="DEFAULT",   # or any other profile in config
-        auth_file_location=r"C:\Users\Fayeque\.oci\config.txt"  # full path to config file
+        # auth_file_location=r"C:\Users\Fayeque\.oci\config.txt"  # full path to config file
+        auth_file_location="oci_config"
     )
     return llm

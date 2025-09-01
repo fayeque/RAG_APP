@@ -34,6 +34,23 @@ class QueryRequest(BaseModel):
 
 @app.on_event("startup")
 def startup_event():
+
+        # --- Recreate pem and config files from environment variables ---
+    pem_content = os.environ.get("OCI_KEY_CONTENT")
+    if pem_content:
+        Path("oci_api_key.pem").write_text(pem_content)
+    
+    # Build your config file from other environment variables
+    oci_config = f"""[DEFAULT]
+    user={os.environ.get('OCI_USER_OCID')}
+    fingerprint={os.environ.get('OCI_FINGERPRINT')}
+    key_file=oci_api_key.pem
+    tenancy={os.environ.get('OCI_TENANCY_OCID')}
+    region={os.environ.get('OCI_REGION')}
+    """
+    Path("oci_config").write_text(oci_config)
+    # ---------------------------------------------------------------
+
     global vs, chain, connection
     print("Starting API...")
 
