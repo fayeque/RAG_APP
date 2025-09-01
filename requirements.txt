@@ -11,3 +11,5 @@ git-filter-repo
 oci
 fastapi
 uvicorn
+dotenv
+pydantic
